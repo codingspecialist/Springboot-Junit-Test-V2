@@ -1,0 +1,24 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+    encoding:
+      charset: utf-8
+
+spring:
+  datasource:
+    url: 마리아URL
+    driver-class-name: 마리아Driver
+    username: 마리아유저
+    password: 마리아비번
+  jpa:
+    open-in-view: true
+    hibernate:
+      ddl-auto: none
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+
+logging:
+  level:
+    '[org.springframework.web]': INFO
+    '[org.hibernate]': INFO
