@@ -40,7 +40,7 @@ public class BookRepositoryTest {
         // given
         String title = "스프링부트1강";
         String author = "권진용";
-        Book book = new Book(title, author);
+        Book book = Book.builder().title(title).author(author).build();
 
         // when
         Book bookEntity = bookRepository.save(book);
@@ -57,7 +57,7 @@ public class BookRepositoryTest {
         // given
         String title = "스프링부트1강";
         String author = "권진용";
-        Book book = new Book(title, author);
+        Book book = Book.builder().title(title).author(author).build();
         bookRepository.save(book);
 
         Long id = 1L;
