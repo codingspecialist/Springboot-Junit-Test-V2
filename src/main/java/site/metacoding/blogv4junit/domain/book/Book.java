@@ -8,8 +8,10 @@ import javax.persistence.Id;
 import lombok.Builder;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 @EqualsAndHashCode
+@NoArgsConstructor
 @Getter
 @Entity
 public class Book {
